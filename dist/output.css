@@ -569,11 +569,16 @@ video {
 }
 
 .header {
+  position: relative;
   border-bottom-width: 1px;
   border-style: solid;
   --tw-border-opacity: 1;
   border-bottom-color: rgb(209 213 219 / var(--tw-border-opacity));
 }
+
+/* .header.open .header__nav {
+    @apply block;
+  } */
 
 .header .container {
   padding-top: .5rem;
@@ -597,7 +602,23 @@ video {
 }
 
 .header .header__nav {
-  display: none;
+  position: absolute;
+  top: 4.1rem;
+  left: 0px;
+  height: 100vh;
+  --tw-bg-opacity: 1;
+  background-color: rgb(244 114 182 / var(--tw-bg-opacity));
+}
+
+.header .header__nav ul {
+  max-height: 0px;
+  overflow: hidden;
+}
+
+.header .header__nav a h4 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .header .toggle__menu {

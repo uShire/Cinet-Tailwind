@@ -8,8 +8,11 @@
 
 @layer components {
   .header {
-    @apply border-solid border-b-[1px] border-b-gray-300;
+    @apply border-solid border-b-[1px] border-b-gray-300 relative;
   }
+  /* .header.open .header__nav {
+    @apply block;
+  } */
   .header .container {
     @apply py-[.5rem];
   }
@@ -23,8 +26,15 @@
     @apply w-40;
   }
   .header .header__nav {
-    @apply hidden;
+    @apply absolute bg-pink-400 top-[4.1rem] left-0 h-[100vh];
   }
+  .header .header__nav ul {
+    @apply max-h-0 overflow-hidden;
+  }
+  .header .header__nav a h4 {
+    @apply flex items-center justify-between;
+  }
+
   .header .toggle__menu {
     @apply flex flex-col gap-2;
   }
