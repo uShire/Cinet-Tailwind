@@ -585,12 +585,15 @@ video {
   border-style: solid;
   --tw-border-opacity: 1;
   border-bottom-color: rgb(209 213 219 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 @media (min-width: 1024px) {
   .header {
     margin-top: 2.5rem;
     border-style: none;
+    background-color: transparent;
   }
 }
 
@@ -907,6 +910,18 @@ video {
     border-color: rgb(209 213 219 / var(--tw-border-opacity));
     padding-left: 0px;
     padding-right: 0px;
+  }
+}
+
+.banner {
+  height: 750px;
+  background-image: url(./img/cinet-banner-mobile.svg);
+  background-size: cover;
+}
+
+@media (min-width: 1024px) {
+  .banner {
+    background-image: url(./img/cinet-banner-desktop.svg);
   }
 }
 

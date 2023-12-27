@@ -8,8 +8,8 @@
 
 @layer components {
   .header {
-    @apply border-solid border-b-[1px] border-b-gray-300 fixed w-full
-    lg:border-none lg:mt-10;
+    @apply border-solid border-b-[1px] border-b-gray-300 fixed w-full bg-light
+    lg:border-none lg:mt-10 lg:bg-transparent;
   }
   /* .header.open .header__nav {
     @apply block;
@@ -124,5 +124,9 @@
   }
   .header .header__nav__item:last-child .pages__content li {
     @apply lg:border-b lg:border-gray-300 lg:px-0;
+  }
+
+  .banner {
+    @apply bg-bannerMob h-[750px] bg-cover lg:bg-bannerDesk;
   }
 }
