@@ -26,7 +26,10 @@
     @apply w-40;
   }
   .header .header__nav {
-    @apply absolute bg-pink-400 top-[4.1rem] left-[-100rem] h-[100vh] transition-all  w-[50%] overflow-y-scroll;
+    @apply absolute bg-light top-[4.2rem] left-[-100rem] h-[100vh] transition-all  w-[50%] overflow-y-scroll;
+  }
+  .header .header__nav {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   }
   .header .header__nav::-webkit-scrollbar {
     width: 1px;
@@ -76,10 +79,10 @@
     @apply max-h-[0rem] overflow-hidden transition-all;
   }
   .header .header__nav__item ul h4 {
-    @apply border-b-[1px] border-b-gray-500 text-[1.3rem] m-3;
+    @apply border-b-[1px] border-b-gray-500 text-[1.3rem] m-3 p-1;
   }
   .header .header__nav__item ul li {
-    @apply my-1 py-3 px-8 hover:bg-yellow-500;
+    @apply my-1 py-3 px-8 hover:bg-dilaw;
   }
   .header .header__nav__item ul.open {
     @apply max-h-[100rem] transition-all;
@@ -88,6 +91,6 @@
     @apply px-5 py-3 hover:cursor-pointer;
   }
   .header .header__nav__item h4.nav:hover {
-    @apply bg-yellow-500;
+    @apply bg-dilaw text-light;
   }
 }
