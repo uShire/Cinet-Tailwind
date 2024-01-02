@@ -39,6 +39,15 @@
     @apply flex flex-col gap-2;
   }
   .header .toggle__menu span {
-    @apply w-8 h-[.1rem] bg-dark block rounded-full;
+    @apply w-8 h-[.1rem] bg-dark block rounded-full transition-all;
+  }
+  .header .toggle__menu.open span:first-child {
+    @apply transform translate-y-2 rotate-[225deg] transition-all;
+  }
+  .header .toggle__menu.open span:nth-child(2) {
+    @apply opacity-0 transition-all;
+  }
+  .header .toggle__menu.open span:last-child {
+    @apply transform translate-y-[-12px] rotate-[-225deg] transition-all;
   }
 }
