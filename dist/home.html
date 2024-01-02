@@ -23,14 +23,97 @@
             <img src="../dist/img/logo.png" alt="" />
           </div>
           <div class="header__nav">
-            <h1>Ansbert</h1>
+            <nav>
+              <div class="header__nav__item">
+                <h4 class="nav">HOME</h4>
+              </div>
+              <div class="header__nav__item">
+                <h4 class="nav">
+                  MOVIES<i class="fa-solid fa-chevron-down"></i>
+                </h4>
+                <ul>
+                  <li><a href="#">Movies 1</a></li>
+                  <li><a href="#">Movies 2</a></li>
+                  <li><a href="#">Movies 3</a></li>
+                  <li><a href="#">Movie Page</a></li>
+                </ul>
+              </div>
+              <div class="header__nav__item">
+                <h4 class="nav">
+                  BLOG<i class="fa-solid fa-chevron-down"></i>
+                </h4>
+                <ul>
+                  <li><a href="#">Blog Post</a></li>
+                </ul>
+              </div>
+              <div class="header__nav__item">
+                <h4 class="nav">
+                  PAGES<i class="fa-solid fa-chevron-down"></i>
+                </h4>
+                <ul>
+                  <div class="pages">
+                    <h4>Elements</h4>
+                    <div class="pages__content">
+                      <li><a href="#">Typography</a></li>
+                      <li><a href="#">Buttons</a></li>
+                      <li><a href="#">Forms</a></li>
+                      <li><a href="#">Grid System</a></li>
+                      <li><a href="#">Icon Lists</a></li>
+                      <li><a href="#">Tables</a></li>
+                      <li><a href="#">Counters & Accordions</a></li>
+                    </div>
+                  </div>
+                  <div class="pages">
+                    <h4>Pages</h4>
+                    <div class="pages__content">
+                      <li><a href="#">Categories</a></li>
+                      <li><a href="#">About</a></li>
+                      <li><a href="#">Our Team</a></li>
+                      <li><a href="#">Contact Us</a></li>
+                      <li><a href="#">404 Page</a></li>
+                      <li><a href="#">Coming Soon</a></li>
+                      <li><a href="#">Privacy Policy</a></li>
+                      <li><a href="#">Search results</a></li>
+                    </div>
+                  </div>
+                </ul>
+              </div>
+            </nav>
+            <div class="search hidden lg:block">
+              <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+            </div>
           </div>
-          <div class="search">
-            <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+          <div class="search lg:hidden">
+            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
           </div>
         </div>
       </div>
     </header>
+
+    <section class="banner">
+      <div class="banner__wrapper">
+        <div class="banner__item">
+          <img src="./img/banner-spider.jpg" alt="" />
+          <div class="banner__item__text">
+            <div class="banner__item__reviews">
+              <p>USA</p>
+              <p>SEP 29, 2021</p>
+              <p>IMDB:3.8/10</p>
+            </div>
+            <div class="banner__item__desc">
+              <h1>Escape Plan 2: Hades</h1>
+              <p>
+                Years after he fought his way out of an inescapable prison, Ray
+                Breslin has organized a new top-notch security force. But when
+                his team member goes missing, Breslin returns to the hell he
+                escaped from.
+              </p>
+              <a href="">WATCH NOW</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <script src="./js/script.js"></script>
   </body>
 </html>

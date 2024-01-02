@@ -9,6 +9,10 @@ module.exports = {
         light: "#ffffff",
         dark: "#2b2b2b",
       },
+      backgroundImage: {
+        bannerDesk: "url(./img/cinet-banner-desktop.svg)",
+        bannerMob: "url(./img/cinet-banner-mobile.svg)",
+      },
     },
   },
   plugins: [],
