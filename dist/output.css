@@ -942,6 +942,7 @@ video {
 .banner__item {
   margin-left: auto;
   margin-right: auto;
+  width: 100%;
   max-width: 80rem;
 }
 
@@ -1031,7 +1032,7 @@ video {
   .banner__item__desc p {
     margin-left: 0px;
     margin-right: 0px;
-    margin-right: 5rem;
+    margin-right: 8rem;
     text-align: left;
   }
 }
@@ -1096,6 +1097,21 @@ video {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
+}
+
+.banner .tns-controls {
+  position: absolute;
+  top: 50%;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.banner .tns-controls button {
+  font-size: 1.5rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .hidden {

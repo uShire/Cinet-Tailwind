@@ -135,7 +135,7 @@ body {
     @apply content-[''] h-[900px] w-[100vw] bg-asul absolute top-0 left-0 z-[-1] lg:h-[800px] lg:w-[50vw];
   }
   .banner__item {
-    @apply max-w-[80rem] mx-auto lg:grid lg:grid-cols-2;
+    @apply max-w-[80rem] w-full mx-auto lg:grid lg:grid-cols-2;
   }
   .banner__item img {
     @apply max-w-[20rem] mx-auto lg:order-2 lg:max-w-[unset];
@@ -156,7 +156,7 @@ body {
     @apply text-center lg:text-left lg:max-w-[60rem];
   }
   .banner__item__desc p {
-    @apply pb-[2rem] pt-[1rem] text-light text-center mx-2 lg:text-left lg:mx-0 lg:mr-[5rem];
+    @apply pb-[2rem] pt-[1rem] text-light text-center mx-2 lg:text-left lg:mx-0 lg:mr-[8rem];
   }
   .banner__item__desc h1 {
     @apply text-light text-[2.2rem] font-bold text-center lg:text-left lg:text-[5rem] lg:max-w-[35rem];
@@ -175,5 +175,11 @@ body {
   }
   .banner__item__desc .watch a:hover span {
     @apply w-[10rem] transition-all;
+  }
+  .banner .tns-controls {
+    @apply absolute top-[50%] flex items-center justify-between w-full;
+  }
+  .banner .tns-controls button {
+    @apply text-light text-[1.5rem];
   }
 }
