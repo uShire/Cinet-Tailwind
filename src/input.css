@@ -62,7 +62,7 @@ body {
     @apply transform rotate-[-225deg] translate-y-[-.50rem] transition-all;
   }
   .header .header__nav__item {
-    @apply my-2
+    @apply my-2 
     /* lg:relative; */;
   }
   .header .header__nav__item:hover ul {
@@ -129,7 +129,10 @@ body {
   }
 
   .banner {
-    @apply bg-bannerMob h-[900px] bg-cover lg:bg-bannerDesk pt-[7rem] lg:flex lg:items-center lg:justify-center lg:h-[800px];
+    @apply h-[900px] bg-cover pt-[7rem] relative lg:flex lg:items-center lg:justify-center lg:h-[800px];
+  }
+  .banner::before {
+    @apply content-[''] h-[900px] w-[100vw] bg-asul absolute top-0 left-0 z-[-1] lg:h-[800px] lg:w-[50vw];
   }
   .banner__item {
     @apply max-w-[80rem] mx-auto lg:grid lg:grid-cols-2;
@@ -153,18 +156,24 @@ body {
     @apply text-center lg:text-left lg:max-w-[60rem];
   }
   .banner__item__desc p {
-    @apply pb-[2rem] pt-[1rem] text-light text-center mx-2 lg:text-left lg:mx-0;
+    @apply pb-[2rem] pt-[1rem] text-light text-center mx-2 lg:text-left lg:mx-0 lg:mr-[5rem];
   }
   .banner__item__desc h1 {
     @apply text-light text-[2.2rem] font-bold text-center lg:text-left lg:text-[5rem] lg:max-w-[35rem];
   }
-  .banner__item__desc a {
-    @apply inline-block text-light text-[1.1rem] relative z-[99] lg:justify-self-center;
+  .banner__item__desc .watch {
+    @apply lg:text-center;
+  }
+  .banner__item__desc .watch a {
+    @apply inline-block text-light text-[1.1rem] relative z-[99] lg:mt-5;
   }
   /* .banner__item__desc a::before {
     @apply content-[''] w-[3rem] h-[3rem] block bg-dilaw rounded-full absolute z-0;
   } */
-  .banner__item__desc a span {
-    @apply w-[4rem] h-[4rem] block bg-dilaw rounded-full absolute -z-[5] top-[-18px] left-[-25px];
+  .banner__item__desc .watch a span {
+    @apply w-[4rem] h-[4rem] block bg-dilaw rounded-full absolute -z-[5] top-[-18px] left-[-25px] transition-all;
+  }
+  .banner__item__desc .watch a:hover span {
+    @apply w-[10rem] transition-all;
   }
 }

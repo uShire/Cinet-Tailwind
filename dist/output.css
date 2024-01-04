@@ -904,8 +904,8 @@ video {
 }
 
 .banner {
+  position: relative;
   height: 900px;
-  background-image: url(./img/cinet-banner-mobile.svg);
   background-size: cover;
   padding-top: 7rem;
 }
@@ -916,7 +916,26 @@ video {
     height: 800px;
     align-items: center;
     justify-content: center;
-    background-image: url(./img/cinet-banner-desktop.svg);
+  }
+}
+
+.banner::before {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+  height: 900px;
+  width: 100vw;
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 94 127 / var(--tw-bg-opacity));
+  --tw-content: '';
+  content: var(--tw-content);
+}
+
+@media (min-width: 1024px) {
+  .banner::before {
+    height: 800px;
+    width: 50vw;
   }
 }
 
@@ -1012,6 +1031,7 @@ video {
   .banner__item__desc p {
     margin-left: 0px;
     margin-right: 0px;
+    margin-right: 5rem;
     text-align: left;
   }
 }
@@ -1030,9 +1050,13 @@ video {
     text-align: left;
     font-size: 5rem;
   }
+
+  .banner__item__desc .watch {
+    text-align: center;
+  }
 }
 
-.banner__item__desc a {
+.banner__item__desc .watch a {
   position: relative;
   z-index: 99;
   display: inline-block;
@@ -1042,8 +1066,8 @@ video {
 }
 
 @media (min-width: 1024px) {
-  .banner__item__desc a {
-    justify-self: center;
+  .banner__item__desc .watch a {
+    margin-top: 1.25rem;
   }
 }
 
@@ -1051,7 +1075,7 @@ video {
     @apply content-[''] w-[3rem] h-[3rem] block bg-dilaw rounded-full absolute z-0;
   } */
 
-.banner__item__desc a span {
+.banner__item__desc .watch a span {
   position: absolute;
   top: -18px;
   left: -25px;
@@ -1062,6 +1086,16 @@ video {
   border-radius: 9999px;
   --tw-bg-opacity: 1;
   background-color: rgb(249 199 61 / var(--tw-bg-opacity));
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.banner__item__desc .watch a:hover span {
+  width: 10rem;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 
 .hidden {
