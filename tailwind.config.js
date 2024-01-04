@@ -13,6 +13,9 @@ module.exports = {
         bannerDesk: "url(./img/cinet-banner-desktop.svg)",
         bannerMob: "url(./img/cinet-banner-mobile.svg)",
       },
+      fontFamily: {
+        poppins: ["poppins"],
+      },
     },
   },
   plugins: [],

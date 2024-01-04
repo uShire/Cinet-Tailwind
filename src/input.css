@@ -3,9 +3,11 @@
 @tailwind utilities;
 
 .container {
-  @apply max-w-[75rem] p-[1.5rem] w-full mx-auto;
+  @apply max-w-[85rem] p-[1.5rem] w-full mx-auto;
 }
-
+body {
+  @apply font-poppins;
+}
 @layer components {
   .header {
     @apply border-solid border-b-[1px] border-b-gray-300 fixed w-full bg-light
@@ -127,6 +129,42 @@
   }
 
   .banner {
-    @apply bg-bannerMob h-[750px] bg-cover lg:bg-bannerDesk;
+    @apply bg-bannerMob h-[900px] bg-cover lg:bg-bannerDesk pt-[7rem] lg:flex lg:items-center lg:justify-center lg:h-[800px];
+  }
+  .banner__item {
+    @apply max-w-[80rem] mx-auto lg:grid lg:grid-cols-2;
+  }
+  .banner__item img {
+    @apply max-w-[20rem] mx-auto lg:order-2 lg:max-w-[unset];
+  }
+  .banner__item__reviews {
+    @apply flex text-light font-semibold justify-center py-10 items-center lg:justify-start lg:py-5;
+  }
+  .banner__item__reviews p {
+    @apply px-5 text-[.9rem];
+  }
+  .banner__item__reviews p:nth-child(2) {
+    @apply border-x-[1px] border-x-light;
+  }
+  .banner__item__reviews p:first-child {
+    @apply lg:px-0 lg:pr-5;
+  }
+  .banner__item__desc {
+    @apply text-center lg:text-left lg:max-w-[60rem];
+  }
+  .banner__item__desc p {
+    @apply pb-[2rem] pt-[1rem] text-light text-center mx-2 lg:text-left lg:mx-0;
+  }
+  .banner__item__desc h1 {
+    @apply text-light text-[2.2rem] font-bold text-center lg:text-left lg:text-[5rem] lg:max-w-[35rem];
+  }
+  .banner__item__desc a {
+    @apply inline-block text-light text-[1.1rem] relative z-[99] lg:justify-self-center;
+  }
+  /* .banner__item__desc a::before {
+    @apply content-[''] w-[3rem] h-[3rem] block bg-dilaw rounded-full absolute z-0;
+  } */
+  .banner__item__desc a span {
+    @apply w-[4rem] h-[4rem] block bg-dilaw rounded-full absolute -z-[5] top-[-18px] left-[-25px];
   }
 }
